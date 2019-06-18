@@ -1,0 +1,4 @@
+node_modules/
+built/
+realm-object-server/
+test.realm*

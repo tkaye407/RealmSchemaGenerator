@@ -1,0 +1,23 @@
+{
+  "name": "schemagenerator",
+  "version": "1.0.0",
+  "description": "MongoDB to Realm Schema Generation",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node built/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MongoDB",
+    "Stitch",
+    "Realm",
+    "SchemaGeneration"
+  ],
+  "author": "Tyler A. Kaye",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.0.8",
+    "command-line-args": "^5.1.1",
+    "mongodb": "^3.2.7"
+  }
+}
