@@ -444,7 +444,7 @@ async function generateSchema(options: Object) {
             if (count <= 0) {
                 throw "Collection has no documents";
             }
-            sampleDocs = await coll.find({}).limit(sampleSize).toArray();
+            sampleDocs = await coll.aggregate([{$sample: {size: sampleSize}}]).toArray();
 
         } catch(err) {
             console.log("Threw error: " + err + " - " + err.stack);
